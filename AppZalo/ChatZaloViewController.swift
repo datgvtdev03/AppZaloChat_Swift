@@ -13,9 +13,9 @@ class ChatZaloViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     @IBOutlet weak var MyTextField: UITextField!
     @IBOutlet weak var tblChatsZalo: UITableView!
-    let danhSachUsers = ["Ban A", "Ban B", "Ban C", "Ban D"]
-    let danhSachChats = ["Hello", "Bạn đang làm gì vậy", "Alooo", "Chúc bạn buổi tối vui vẻ nhé"]
-    let danhSachAnh = ["anh1", "anh2", "anh3", "anh4"]
+    let danhSachUsers = ["Ban A", "Ban B", "Ban C", "Ban D", "Ban E"]
+    let danhSachChats = ["Hello", "Bạn đang làm gì vậy", "Alooo", "Chúc bạn buổi tối vui vẻ nhé", "hii =)))"]
+    let danhSachAnh = ["anh1", "anh2", "anh3", "anh4", "anh2"]
     override func viewDidLoad() {
         super.viewDidLoad()
         tblChatsZalo.dataSource = self
@@ -36,16 +36,12 @@ class ChatZaloViewController: UIViewController, UITableViewDataSource, UITableVi
         tblChatTime.text = "Time"
         let imgIcon = cell.viewWithTag(100) as! UIImageView
         imgIcon.image = UIImage(named: danhSachAnh[indexPath.row])
-        
-//        if indexPath.row % 2 == 0 {
-//                    cell.backgroundColor = .green
-//                } else {
-//                    cell.backgroundColor = .yellow
-//                }
+        imgIcon.layer.cornerRadius = 30
+
         return cell
         }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-                return 150
+                return 130
         }
     
     }
