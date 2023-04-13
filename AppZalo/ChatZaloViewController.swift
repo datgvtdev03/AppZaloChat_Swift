@@ -13,7 +13,8 @@ class ChatZaloViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     @IBOutlet weak var MyTextField: UITextField!
     @IBOutlet weak var tblChatsZalo: UITableView!
-    let danhSachChat = ["Ban A", "Ban B", "Ban C", "Ban D"]
+    let danhSachUsers = ["Ban A", "Ban B", "Ban C", "Ban D"]
+    let danhSachChats = ["Hello", "Bạn đang làm gì vậy", "Alooo", "Chúc bạn buổi tối vui vẻ nhé"]
     let danhSachAnh = ["anh1", "anh2", "anh3", "anh4"]
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,20 +24,24 @@ class ChatZaloViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return danhSachChat.count
+        return danhSachUsers.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tblChatsZalo.dequeueReusableCell(withIdentifier: "ChatCellIdentifier")!
         let tblChatsZaloName = cell.viewWithTag(101) as! UILabel
-        tblChatsZaloName.text = danhSachChat[indexPath.row]
+        tblChatsZaloName.text = danhSachUsers[indexPath.row]
+        let tbldanhSachChats = cell.viewWithTag(103) as! UILabel
+        tbldanhSachChats.text = danhSachChats[indexPath.row]
+        let tblChatTime = cell.viewWithTag(102) as! UILabel
+        tblChatTime.text = "Time"
         let imgIcon = cell.viewWithTag(100) as! UIImageView
         imgIcon.image = UIImage(named: danhSachAnh[indexPath.row])
         
-        if indexPath.row % 2 == 0 {
-                    cell.backgroundColor = .green
-                } else {
-                    cell.backgroundColor = .yellow
-                }
+//        if indexPath.row % 2 == 0 {
+//                    cell.backgroundColor = .green
+//                } else {
+//                    cell.backgroundColor = .yellow
+//                }
         return cell
         }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
