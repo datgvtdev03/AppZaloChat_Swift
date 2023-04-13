@@ -13,6 +13,7 @@
 		D3FCE82629E7657100A357CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3FCE82429E7657100A357CA /* Main.storyboard */; };
 		D3FCE82829E7657300A357CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3FCE82729E7657300A357CA /* Assets.xcassets */; };
 		D3FCE82B29E7657300A357CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3FCE82929E7657300A357CA /* LaunchScreen.storyboard */; };
+		D3FCE83329E767FA00A357CA /* ChatZaloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FCE83229E767FA00A357CA /* ChatZaloViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D3FCE82729E7657300A357CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3FCE82A29E7657300A357CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3FCE82C29E7657300A357CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3FCE83229E767FA00A357CA /* ChatZaloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatZaloViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				D3FCE82729E7657300A357CA /* Assets.xcassets */,
 				D3FCE82929E7657300A357CA /* LaunchScreen.storyboard */,
 				D3FCE82C29E7657300A357CA /* Info.plist */,
+				D3FCE83229E767FA00A357CA /* ChatZaloViewController.swift */,
 			);
 			path = AppZalo;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3FCE83329E767FA00A357CA /* ChatZaloViewController.swift in Sources */,
 				D3FCE82329E7657100A357CA /* ViewController.swift in Sources */,
 				D3FCE81F29E7657100A357CA /* AppDelegate.swift in Sources */,
 				D3FCE82129E7657100A357CA /* SceneDelegate.swift in Sources */,
